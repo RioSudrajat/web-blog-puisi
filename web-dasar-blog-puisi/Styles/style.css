@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+.header {
+    font-size: 20px;
+    padding: 60px;
+    background: linear-gradient(45deg, #6a30ac, #1399c6, #2b5876);
+    text-align: center;
+    color: white;
+  }
+  .content {
+    flex: 4;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+  main {
+    padding: 20px;
+    background: linear-gradient(45deg, #2b5876, #1399c6,#6a30ac );
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  .profile header {
+    text-align: center;
+  }
+  
+  .featured-image {
+    width: 100%;
+    max-height: 300px;
+    
+  
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .profile img {
+    width: 200px;
+    height: auto; 
+    border-radius: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    
+  }
+  
+  .card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    background: #2aabc5;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .social_icons{
+    display: flex;
+    margin-top: 5em;
+    gap: 30px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.icon:hover{
+    color:#131314;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #f5f5f8;
+  background: linear-gradient(45deg, #6a30ac, #1399c6, #2b5876);
+  row-gap: 30px;
+  padding-block: 20px 40px;
+}
+.top-footer p{
+  font-size: 25px;
+  font-weight: 600;
+}
+.footer-social-icons{
+  display: flex;
+  gap: 30px;   
+}
+.bottom-footer{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.bottom-footer p a{
+ color: #f5f5f8;
+}
+.bottom-footer p a:hover{
+ color: #0d0d0e;
+}
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
